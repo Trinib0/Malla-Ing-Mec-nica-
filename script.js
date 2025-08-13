@@ -14,7 +14,7 @@ const malla = [
                 ramos: [
                     { id: "IME1010", nombre: "Introducción a la ingeniería mecánica", prerrequisitos: [], aprobado: false },
                     { id: "MAT1001", nombre: "Fundamentos de matemáticas para ingeniería", prerrequisitos: [], aprobado: false },
-                    { id: "FIS1112", nombre: "Fundamentos de física", prerrequisitos: [], aprobado: false }
+                    { id: "FIS1112", nombre: "Fundamentos de física", prerrequisitos: [], aprobado: false },
                     { id: "FIN100-75", nombre: "Comunicación efectiva y desarrollo profesional e integral", prerrequisitos: [], aprobado: false }  
                 ]
             },
