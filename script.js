@@ -111,10 +111,6 @@ const malla = [
                 ramos: [
                     { id: "IME5010", nombre: "Administracion del mantenimiento", prerrequisitos: ["IME4020" , "IME4011"], aprobado: false },
                     { id: "IME5011", nombre: "Poyecto integral de ingeneria", prerrequisitos: ["IME4020", "ICM4021" , "IME4022" , "IME4023" ,"IME4024" , "IME4025"], aprobado: false }
-
-                ]
-            },
-            {
               
                 ]
             }
