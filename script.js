@@ -15,7 +15,7 @@ const malla = [
                     { id: "IME1010", nombre: "Introducción a la ingeniería mecánica", prerrequisitos: [], aprobado: false },
                     { id: "MAT1001", nombre: "Fundamentos de matemáticas para ingeniería", prerrequisitos: [], aprobado: false },
                     { id: "FIS1112", nombre: "Fundamentos de física", prerrequisitos: [], aprobado: false }
-                    { id: "COM100-73", nombre: "Comunicación efectiva y desarrollo profesional e integral", prerrequisitos: [], aprobado: false } // Corregido FIN100-75 
+                    { id: "FIN100-75", nombre: "Comunicación efectiva y desarrollo profesional e integral", prerrequisitos: [], aprobado: false }  
                 ]
             },
             {
@@ -38,13 +38,16 @@ const malla = [
                     { id: "MAT1003", nombre: "Cálculo en varias variables", prerrequisitos: ["MAT1002"], aprobado: false },
                     { id: "MAT1004", nombre: "Álgebra lineal", prerrequisitos: ["MAT1002"], aprobado: false },
                     { id: "IME2011", nombre: "Ciencias de los materiales", prerrequisitos: [], aprobado: false },
-                    { id: "IME2012", nombre: "Mediciones y metrología", prerrequisitos: ["IME1011"], aprobado: false },
+                    { id: "IME2012", nombre: "Mediciones y metrología", prerrequisitos: ["IME1011"], aprobado: false }
+
+            ]
                 nombre: "Semestre 4",
                 ramos: [
                     { id: "MAT1005", nombre: "Ecuaciones diferenciales", prerrequisitos: ["MAT1003"], aprobado: false },
-                    { id: "IME2013", nombre: "Estática", prerrequisitos: ["MAT1003", "FIS1001"], aprobado: false },
-                    { id: "IME2012", nombre: "Mediciones y metrología", prerrequisitos: ["ICM2010"], aprobado: false },
-                    { id: "IME2014", nombre: "Materiales para ingeniería", prerrequisitos: ["ICM2011"], aprobado: false }
+                    { id: "IME2021", nombre: " Mecanica 1 (Estática)", prerrequisitos: ["MAT1002", "FIS1002"], aprobado: false },
+                    { id: "IME2023", nombre: "Estadistica aplicada", prerrequisitos: ["MAT1003"], aprobado: false },
+                    { id: "IME2022", nombre: "Materiales para ingeneria ", prerrequisitos: ["IME2011"], aprobado: false },
+                    { id: "IGN9001", nombre: "Ingles 1", prerrequisitos: [], aprobado: false }
                 ]
             }
         ]
@@ -55,19 +58,21 @@ const malla = [
             {
                 nombre: "Semestre 5",
                 ramos: [
-                    { id: "MAT1007", nombre: "Ecuaciones diferenciales parciales", prerrequisitos: ["MAT1005"], aprobado: false },
-                    { id: "ICM3010", nombre: "Dinámica", prerrequisitos: ["ICM2013"], aprobado: false },
-                    { id: "ICM3011", nombre: "Termodinámica 1", prerrequisitos: ["MAT1003", "QUI1127"], aprobado: false }, // Corregido QUI127 a QUI1127
-                    { id: "ING9001", nombre: "Inglés 1", prerrequisitos: [], aprobado: false }
+                    { id: "IME3010", nombre: "Electrotecnia y maquinas electricas", prerrequisitos: [], aprobado: false },
+                    { id: "IME3011", nombre: "Mecanica 2 (Dinámica)", prerrequisitos: ["MAT1003" , "MAT1004" , "IME2021"], aprobado: false },
+                    { id: "IME3012", nombre: "Maquinas Herramientas", prerrequisitos: ["MAT1004"], aprobado: false },
+                    { id: "IME3013", nombre: "Termodinámica aplicada", prerrequisitos: ["IME1011", "IME2010" , "IME2022" ], aprobado: false }, 
+                    { id: "ING9002", nombre: "Inglés 2", prerrequisitos: ["ING9001"], aprobado: false }
                 ]
             },
             {
                 nombre: "Semestre 6",
                 ramos: [
-                    { id: "ICM3012", nombre: "Procesos de fabricación 1", prerrequisitos: ["ICM2011"], aprobado: false },
-                    { id: "ICM3013", nombre: "Lenguaje de programación y métodos numéricos", prerrequisitos: ["MAT1005"], aprobado: false },
-                    { id: "ICM3014", nombre: "Mecánica de fluidos", prerrequisitos: ["ICM3011", "MAT1007"], aprobado: false },
-                    { id: "ING9002", nombre: "Inglés 2", prerrequisitos: ["ING9001"], aprobado: false }
+                    { id: "IME3020", nombre: "Procesos de fabricación", prerrequisitos: ["IME3012"], aprobado: false },
+                    { id: "IME3021", nombre: "Control automatico de sistemas mecanicos", prerrequisitos: ["IME3010"], aprobado: false },
+                    { id: "IME3022", nombre: "Resistencia de materiales", prerrequisitos: ["IME2021" , "IME2022"], aprobado: false },
+                    { id: "ICM3023", nombre: "Mecánica de fluidos aplicada", prerrequisitos: ["IME3013", "MAT1005"], aprobado: false },
+                    { id: "ING9003", nombre: "Inglés 3", prerrequisitos: ["ING9002"], aprobado: false }
                 ]
             }
         ]
@@ -78,20 +83,22 @@ const malla = [
             {
                 nombre: "Semestre 7",
                 ramos: [
-                    { id: "ICM4012", nombre: "Termodinámica 2", prerrequisitos: ["ICM3011", "ICM3014"], aprobado: false },
-                    { id: "ICM4011", nombre: "Mecánica de materiales", prerrequisitos: ["ICM2011"], aprobado: false },
-                    { id: "ICM4010", nombre: "Procesos de fabricación 2", prerrequisitos: ["ICM3012"], aprobado: false },
-                    { id: "ING9003", nombre: "Inglés 3", prerrequisitos: ["ING9002"], aprobado: false }
+                    { id: "IME4010", nombre: "Administracion de la produccion y control de perdidas", prerrequisitos: ["IME3020"], aprobado: false },
+                    { id: "IME4011", nombre: "Administracion de recursos Humanos", prerrequisitos: [], aprobado: false },
+                    { id: "IME4012", nombre: "Elemento de Maquinas", prerrequisitos: ["IME3011" , "IME3022"], aprobado: false },
+                    { id: "IME4013", nombre: "Transferencia de calor aplicada", prerrequisitos: ["IME3023"], aprobado: false },
+                    { id: "ING9004", nombre: "Inglés 4", prerrequisitos: ["ING9003"], aprobado: false }
                 ]
             },
             {
                 nombre: "Semestre 8",
                 ramos: [
-                    { id: "ICM4014", nombre: "Electrotecnia", prerrequisitos: [], aprobado: false },
-                    { id: "ICM4015", nombre: "Elementos de máquinas", prerrequisitos: ["ICM4011", "ICM3010"], aprobado: false },
-                    { id: "ICM4013", nombre: "Vibraciones mecánicas", prerrequisitos: ["ICM3010", "MAT1007"], aprobado: false },
-                    { id: "ICM4016", nombre: "Transferencia de calor", prerrequisitos: ["ICM3014", "ICM4012"], aprobado: false },
-                    { id: "ING9004", nombre: "Inglés 4", prerrequisitos: ["ING9003"], aprobado: false }
+                    { id: "IME4020", nombre: "Mantenimiento y confiabilidad", prerrequisitos: ["IME2023" , "IME4012"], aprobado: false },
+                    { id: "IME4021", nombre: "Evaluacion de proyectos", prerrequisitos: ["IME4010", "IME4011"], aprobado: false },
+                    { id: "IME4022", nombre: "Mecatronica", prerrequisitos: ["IME3021", "IME4012"], aprobado: false },
+                    { id: "IME4023", nombre: "Motores de combustion interna", prerrequisitos: ["IME3010", "IME3022" , "IME4013"], aprobado: false },
+                    { id: "IME4024", nombre: "Mecanica de fluidos", prerrequisitos: ["IME3010" , "IME3022" , "IME4013"], aprobado: false },
+                    { id: "IME4025", nombre: "Tecnologias Energeticas", prerrequisitos: ["IME4013"], aprobado: false }
                 ]
             }
         ]
@@ -102,34 +109,13 @@ const malla = [
             {
                 nombre: "Semestre 9",
                 ramos: [
-                    { id: "ICM5013", nombre: "Turbomáquinas", prerrequisitos: ["ICM4016"], aprobado: false },
-                    { id: "ICM5012", nombre: "Modelación mecánica", prerrequisitos: ["ICM4011", "ICM4016"], aprobado: false },
-                    { id: "ICM5010", nombre: "Análisis de falla y monitoreo de condiciones", prerrequisitos: ["ICM2014"], aprobado: false },
-                    { id: "ICM5011", nombre: "Automatización y control", prerrequisitos: ["ICM4014"], aprobado: false },
-                    { id: "ING9600", nombre: "Evaluación de proyectos", prerrequisitos: [], aprobado: false } // Corregido ICM550 a ING9600
+                    { id: "IME5010", nombre: "Administracion del mantenimiento", prerrequisitos: ["IME4020" , "IME4011"], aprobado: false },
+                    { id: "IME5011", nombre: "Poyecto integral de ingeneria", prerrequisitos: ["IME4020", "ICM4021" , "IME4022" , "IME4023" ,"IME4024" , "IME4025"], aprobado: false }
+
                 ]
             },
             {
-                nombre: "Semestre 10",
-                ramos: [
-                    { id: "ICM5014", nombre: "Herramientas de gestión de la producción", prerrequisitos: [], aprobado: false },
-                    { id: "ICM5016", nombre: "Diseño mecánico", prerrequisitos: ["ICM5012"], aprobado: false },
-                    { id: "ICM5017", nombre: "Proyecto de titulación 1", prerrequisitos: [], aprobado: false },
-                    { id: "ICM5015", nombre: "Optimización e ingeniería de plantas", prerrequisitos: [], aprobado: false }
-                ]
-            }
-        ]
-    },
-    {
-        ano: 6,
-        semestres: [
-            {
-                nombre: "Semestre 11",
-                ramos: [
-                    { id: "ICM6010", nombre: "Administración de RR.HH.", prerrequisitos: [], aprobado: false },
-                    { id: "ICM6011", nombre: "Gestión de activos y confiabilidad", prerrequisitos: ["ICM5010"], aprobado: false },
-                    { id: "ICM6012", nombre: "Proyecto de ingeniería", prerrequisitos: ["ICM5015", "ING9600"], aprobado: false }, // Corregido ICM550 a ING9600
-                    { id: "ICM6013", nombre: "Proyecto de titulación 2", prerrequisitos: ["ICM5017"], aprobado: false }
+              
                 ]
             }
         ]
