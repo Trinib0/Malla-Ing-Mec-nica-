@@ -38,7 +38,7 @@ const malla = [
                     { id: "MAT1003", nombre: "Cálculo en varias variables", prerrequisitos: ["MAT1002"], aprobado: false },
                     { id: "MAT1004", nombre: "Álgebra lineal", prerrequisitos: ["MAT1002"], aprobado: false },
                     { id: "IME2011", nombre: "Ciencias de los materiales", prerrequisitos: [], aprobado: false },
-                    { id: "IME2012", nombre: "Mediciones y metrología", prerrequisitos: ["IME1011"], aprobado: false }
+                    { id: "IME2010", nombre: "Mediciones y metrología", prerrequisitos: ["IME1011"], aprobado: false }
 
                ] 
             },
