@@ -1,4 +1,14 @@
 /* estilos.css */
+:root {
+  --color-no-apto: #ff4d4d;       /* Rojo */
+  --color-apto: #ffd633;          /* Amarillo */
+  --color-aprobado: #33cc33;      /* Verde */
+  --color-prerrequisito: #3399ff; /* Azul */
+  --color-depende: #b366ff;       /* Lila */
+}
+
+/* Aquí seguiría tu CSS actual... */
+
 
 body {
     font-family: Arial, sans-serif;
