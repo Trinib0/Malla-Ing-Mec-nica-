@@ -40,7 +40,10 @@ const malla = [
                     { id: "IME2011", nombre: "Ciencias de los materiales", prerrequisitos: [], aprobado: false },
                     { id: "IME2012", nombre: "Mediciones y metrología", prerrequisitos: ["IME1011"], aprobado: false }
 
-            ]
+               ] 
+            },
+            {
+                    
                 nombre: "Semestre 4",
                 ramos: [
                     { id: "MAT1005", nombre: "Ecuaciones diferenciales", prerrequisitos: ["MAT1003"], aprobado: false },
