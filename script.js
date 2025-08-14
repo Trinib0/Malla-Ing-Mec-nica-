@@ -50,7 +50,7 @@ const malla = [
                     { id: "IME2021", nombre: " Mecanica 1 (Estática)", prerrequisitos: ["MAT1002", "FIS1002"], aprobado: false },
                     { id: "IME2023", nombre: "Estadistica aplicada", prerrequisitos: ["MAT1003"], aprobado: false },
                     { id: "IME2022", nombre: "Materiales para ingeneria ", prerrequisitos: ["IME2011"], aprobado: false },
-                    { id: "IGN9001", nombre: "Ingles 1", prerrequisitos: [], aprobado: false }
+                    { id: "ING9001", nombre: "Ingles 1", prerrequisitos: [], aprobado: false }
                 ]
             }
         ]
