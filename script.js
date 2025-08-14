@@ -116,7 +116,7 @@ const malla = [
                     { id: "IME5011", nombre: "Poyecto integral de ingeneria", prerrequisitos: ["IME4020", "ICM4021" , "IME4022" , "IME4023" ,"IME4024" , "IME4025"], aprobado: false }
                ]
             }
-       ];
+            ]
 
 // Un mapa para buscar rápidamente los datos de un ramo por su ID
 const ramosMap = new Map();
