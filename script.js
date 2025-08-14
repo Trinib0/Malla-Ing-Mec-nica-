@@ -63,8 +63,8 @@ const malla = [
                 ramos: [
                     { id: "IME3010", nombre: "Electrotecnia y maquinas electricas", prerrequisitos: [], aprobado: false },
                     { id: "IME3011", nombre: "Mecanica 2 (Dinámica)", prerrequisitos: ["MAT1003" , "MAT1004" , "IME2021"], aprobado: false },
-                    { id: "IME3012", nombre: "Maquinas Herramientas", prerrequisitos: ["MAT1004"], aprobado: false },
-                    { id: "IME3013", nombre: "Termodinámica aplicada", prerrequisitos: ["IME1011", "IME2010" , "IME2022" ], aprobado: false }, 
+                    { id: "IME3012", nombre: "Maquinas Herramientas", prerrequisitos: ["IME1011", "IME2010" , "IME2022"], aprobado: false },
+                    { id: "IME3013", nombre: "Termodinámica aplicada", prerrequisitos: ["MAT1004"], aprobado: false }, 
                     { id: "ING9002", nombre: "Inglés 2", prerrequisitos: ["ING9001"], aprobado: false }
                 ]
             },
@@ -113,7 +113,7 @@ const malla = [
                 nombre: "Semestre 9",
                 ramos: [
                     { id: "IME5010", nombre: "Administracion del mantenimiento", prerrequisitos: ["IME4020" , "IME4011"], aprobado: false },
-                    { id: "IME5011", nombre: "Poyecto integral de ingeneria", prerrequisitos: ["IME4020", "ICM4021" , "IME4022" , "IME4023" ,"IME4024" , "IME4025"], aprobado: false }
+                    { id: "IME5011", nombre: "Poyecto integral de ingeneria", prerrequisitos: ["IME4020", "IME4021" , "IME4022" , "IME4023" ,"IME4024" , "IME4025"], aprobado: false }
                ]
             }
          ]
