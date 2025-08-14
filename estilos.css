@@ -1,7 +1,5 @@
 /* estilos.css */
 
-}
-
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
@@ -142,37 +140,4 @@ h1 {
         margin-bottom: 20px;
     }
 }
-    /* ===== Leyenda simple ===== */
-    .leyenda-simple {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      font-size: 14px;
-      margin-bottom: 15px;
-      align-items: center;
-    }
- }
-    .leyenda-simple .swatch {
-      display: inline-block;
-      width: 14px;
-      height: 14px;
-      margin-right: 5px;
-      border-radius: 3px;
-      border: 1px solid rgba(0,0,0,0.2);
-}
-:root {
-  --color-no-apto: #ff4d4d;       /* Rojo */
-  --color-apto: #ffd633;          /* Amarillo */
-  --color-aprobado: #33cc33;      /* Verde */
-  --color-prerrequisito: #3399ff; /* Azul */
-  --color-depende: #b366ff;       /* Lila */
-}
-
-    /* Usamos los mismos colores que las clases de ramos */
-    .swatch.estado-no-apto { background: var(--color-no-apto); } //rojo
-    .swatch.estado-apto { background: var(--color-apto); } //amarillo
-    .swatch.estado-aprobado { background: var(--color-aprobado); } //verde
-    .swatch.estado-prerrequisito { background: var(--color-prerrequisito); } //azul
-    .swatch.estado-depende { background: var(--color-depende); } //lila
-
-}
+ 
