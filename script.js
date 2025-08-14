@@ -37,8 +37,8 @@ const malla = [
                 ramos: [
                     { id: "MAT1003", nombre: "Cálculo en varias variables", prerrequisitos: ["MAT1002"], aprobado: false },
                     { id: "MAT1004", nombre: "Álgebra lineal", prerrequisitos: ["MAT1002"], aprobado: false },
-                    { id: "IME2011", nombre: "Ciencias de los materiales", prerrequisitos: [], aprobado: false },
-                    { id: "IME2010", nombre: "Mediciones y metrología", prerrequisitos: ["IME1011"], aprobado: false }
+                    { id: "IME2011", nombre: "Ciencias de los Materiales", prerrequisitos: [], aprobado: false },
+                    { id: "IME2010", nombre: "Mediciones y Metrología", prerrequisitos: ["IME1011"], aprobado: false }
 
                ] 
             },
@@ -47,10 +47,10 @@ const malla = [
                 nombre: "Semestre 4",
                 ramos: [
                     { id: "MAT1005", nombre: "Ecuaciones diferenciales", prerrequisitos: ["MAT1003"], aprobado: false },
-                    { id: "IME2021", nombre: " Mecanica 1 (Estática)", prerrequisitos: ["MAT1002", "FIS1002"], aprobado: false },
-                    { id: "IME2023", nombre: "Estadistica aplicada", prerrequisitos: ["MAT1003"], aprobado: false },
-                    { id: "IME2022", nombre: "Materiales para ingeneria ", prerrequisitos: ["IME2011"], aprobado: false },
-                    { id: "ING9001", nombre: "Ingles 1", prerrequisitos: [], aprobado: false }
+                    { id: "IME2021", nombre: " Mecánica 1 (Estática)", prerrequisitos: ["MAT1002", "FIS1002"], aprobado: false },
+                    { id: "IME2023", nombre: "Estadistica Aplicada", prerrequisitos: ["MAT1003"], aprobado: false },
+                    { id: "IME2022", nombre: "Materiales para ingenería ", prerrequisitos: ["IME2011"], aprobado: false },
+                    { id: "ING9001", nombre: "Inglés 1", prerrequisitos: [], aprobado: false }
                 ]
             }
         ]
@@ -62,18 +62,18 @@ const malla = [
                 nombre: "Semestre 5",
                 ramos: [
                     { id: "IME3010", nombre: "Electrotecnia y maquinas electricas", prerrequisitos: [], aprobado: false },
-                    { id: "IME3011", nombre: "Mecanica 2 (Dinámica)", prerrequisitos: ["MAT1003" , "MAT1004" , "IME2021"], aprobado: false },
+                    { id: "IME3011", nombre: "Mecánica 2 (Dinámica)", prerrequisitos: ["MAT1003" , "MAT1004" , "IME2021"], aprobado: false },
                     { id: "IME3012", nombre: "Maquinas Herramientas", prerrequisitos: ["IME1011", "IME2010" , "IME2022"], aprobado: false },
-                    { id: "IME3013", nombre: "Termodinámica aplicada", prerrequisitos: ["MAT1004"], aprobado: false }, 
+                    { id: "IME3013", nombre: "Termodinámica Aplicada", prerrequisitos: ["MAT1004"], aprobado: false }, 
                     { id: "ING9002", nombre: "Inglés 2", prerrequisitos: ["ING9001"], aprobado: false }
                 ]
             },
             {
                 nombre: "Semestre 6",
                 ramos: [
-                    { id: "IME3020", nombre: "Procesos de fabricación", prerrequisitos: ["IME3012"], aprobado: false },
-                    { id: "IME3021", nombre: "Control automatico de sistemas mecanicos", prerrequisitos: ["IME3010"], aprobado: false },
-                    { id: "IME3022", nombre: "Resistencia de materiales", prerrequisitos: ["IME2021" , "IME2022"], aprobado: false },
+                    { id: "IME3020", nombre: "Procesos de Fabricación", prerrequisitos: ["IME3012"], aprobado: false },
+                    { id: "IME3021", nombre: "Control Automatico de Sistemas Mecánicos", prerrequisitos: ["IME3010"], aprobado: false },
+                    { id: "IME3022", nombre: "Resistencia de Materiales", prerrequisitos: ["IME2021" , "IME2022"], aprobado: false },
                     { id: "ICM3023", nombre: "Mecánica de fluidos aplicada", prerrequisitos: ["IME3013", "MAT1005"], aprobado: false },
                     { id: "ING9003", nombre: "Inglés 3", prerrequisitos: ["ING9002"], aprobado: false }
                 ]
@@ -86,22 +86,22 @@ const malla = [
             {
                 nombre: "Semestre 7",
                 ramos: [
-                    { id: "IME4010", nombre: "Administracion de la produccion y control de perdidas", prerrequisitos: ["IME3020"], aprobado: false },
-                    { id: "IME4011", nombre: "Administracion de recursos Humanos", prerrequisitos: [], aprobado: false },
-                    { id: "IME4012", nombre: "Elemento de Maquinas", prerrequisitos: ["IME3011" , "IME3022"], aprobado: false },
-                    { id: "IME4013", nombre: "Transferencia de calor aplicada", prerrequisitos: ["IME3023"], aprobado: false },
+                    { id: "IME4010", nombre: "Administración de la Produccion y Control de perdidas", prerrequisitos: ["IME3020"], aprobado: false },
+                    { id: "IME4011", nombre: "Administración de Recursos Humanos", prerrequisitos: [], aprobado: false },
+                    { id: "IME4012", nombre: "Elemento de Máquinas", prerrequisitos: ["IME3011" , "IME3022"], aprobado: false },
+                    { id: "IME4013", nombre: "Transferencia de Calor Aplicada", prerrequisitos: ["IME3023"], aprobado: false },
                     { id: "ING9004", nombre: "Inglés 4", prerrequisitos: ["ING9003"], aprobado: false }
                 ]
             },
             {
                 nombre: "Semestre 8",
                 ramos: [
-                    { id: "IME4020", nombre: "Mantenimiento y confiabilidad", prerrequisitos: ["IME2023" , "IME4012"], aprobado: false },
-                    { id: "IME4021", nombre: "Evaluacion de proyectos", prerrequisitos: ["IME4010", "IME4011"], aprobado: false },
-                    { id: "IME4022", nombre: "Mecatronica", prerrequisitos: ["IME3021", "IME4012"], aprobado: false },
-                    { id: "IME4023", nombre: "Motores de combustion interna", prerrequisitos: ["IME3010", "IME3022" , "IME4013"], aprobado: false },
-                    { id: "IME4024", nombre: "Mecanica de fluidos", prerrequisitos: ["IME3010" , "IME3022" , "IME4013"], aprobado: false },
-                    { id: "IME4025", nombre: "Tecnologias Energeticas", prerrequisitos: ["IME4013"], aprobado: false }
+                    { id: "IME4020", nombre: "Mantenimiento y Confiabilidad", prerrequisitos: ["IME2023" , "IME4012"], aprobado: false },
+                    { id: "IME4021", nombre: "Evaluación de proyectos", prerrequisitos: ["IME4010", "IME4011"], aprobado: false },
+                    { id: "IME4022", nombre: "Mecatrónica", prerrequisitos: ["IME3021", "IME4012"], aprobado: false },
+                    { id: "IME4023", nombre: "Motores de combustión interna", prerrequisitos: ["IME3010", "IME3022" , "IME4013"], aprobado: false },
+                    { id: "IME4024", nombre: "Mecánica de fluidos", prerrequisitos: ["IME3010" , "IME3022" , "IME4013"], aprobado: false },
+                    { id: "IME4025", nombre: "Tecnologías Energéticas", prerrequisitos: ["IME4013"], aprobado: false }
                 ]
             }
         ]
@@ -112,8 +112,8 @@ const malla = [
             {
                 nombre: "Semestre 9",
                 ramos: [
-                    { id: "IME5010", nombre: "Administracion del mantenimiento", prerrequisitos: ["IME4020" , "IME4011"], aprobado: false },
-                    { id: "IME5011", nombre: "Poyecto integral de ingeneria", prerrequisitos: ["IME4020", "IME4021" , "IME4022" , "IME4023" ,"IME4024" , "IME4025"], aprobado: false }
+                    { id: "IME5010", nombre: "Administración del Mantenimiento", prerrequisitos: ["IME4020" , "IME4011"], aprobado: false },
+                    { id: "IME5011", nombre: "Proyecto integral de Ingenería", prerrequisitos: ["IME4020", "IME4021" , "IME4022" , "IME4023" ,"IME4024" , "IME4025"], aprobado: false }
                ]
             }
          ]
