@@ -16,7 +16,7 @@ const malla = [
                     { id: "MAT1001", nombre: "Fundamentos de Matemáticas para Ingeniería", prerrequisitos: [], creditos: 6, aprobado: false },
                     { id: "FIS1112", nombre: "Fundamentos de Física", prerrequisitos: [], aprobado: false },
                     { id: "FIN100-75", nombre: "Comunicación efectiva y desarrollo profesional e integral", prerrequisitos: [], aprobado: false },
-                    { id: "ICR010", nombre: "Antropología Cristiana", prerrequisitos[], aprobado: false }
+                    { id: "ICR010", nombre: "Antropología Cristiana", prerrequisitos: [], aprobado: false }
                 ]
             },
             {
