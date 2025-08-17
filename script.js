@@ -148,7 +148,7 @@ function isRamoUnlocked(ramoId) {
         return true;
     }
     // Verifica si *todos* sus prerrequisitos están marcados como aprobados
-    return ramo.prerrequisitos.every(prereqId => {
+     return ramo.prerrequisitos.every(prereqId => {
         const prereqRamo = ramosMap.get(prereqId);
         // El prerrequisito debe existir y estar aprobado
         return prereqRamo && prereqRamo.aprobado;
