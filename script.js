@@ -124,9 +124,9 @@ const malla = [
                     { id: "OPT0030", nombre: "Optativo 3", prerrequisitos: [], aprobado: false }
                ]
             }
-         ]     
-  ];
-
+         ]
+    }  
+];
 
 // Un mapa para buscar rápidamente los datos de un ramo por su ID
 const ramosMap = new Map();
