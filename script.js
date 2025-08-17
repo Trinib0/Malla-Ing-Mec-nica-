@@ -12,8 +12,8 @@ const malla = [
             {
                 nombre: "Semestre 1",
                 ramos: [
-                    { id: "IME1010", nombre: "Introducción a la Ingeniería Mecánica", prerrequisitos: [], creditos: 4, aprobado: false },
-                    { id: "MAT1001", nombre: "Fundamentos de Matemáticas para Ingeniería", prerrequisitos: [], creditos: 6, aprobado: false },
+                    { id: "IME1010", nombre: "Introducción a la Ingeniería Mecánica", prerrequisitos: [],  aprobado: false },
+                    { id: "MAT1001", nombre: "Fundamentos de Matemáticas para Ingeniería", prerrequisitos: [], aprobado: false },
                     { id: "FIS1112", nombre: "Fundamentos de Física", prerrequisitos: [], aprobado: false },
                     { id: "FIN100-75", nombre: "Comunicación efectiva y desarrollo profesional e integral", prerrequisitos: [], aprobado: false },
                     { id: "ICR010", nombre: "Antropología Cristiana", prerrequisitos: [], aprobado: false }
@@ -144,7 +144,7 @@ function isRamoUnlocked(ramoId) {
     const ramo = ramosMap.get(ramoId);
     if (!ramo) return false; // Si el ramo no existe en los datos, no puede estar desbloqueado
     // Si no tiene prerrequisitos, siempre está desbloqueado (se puede tomar desde el inicio)
-    if (ramo.prerrequisitos.length === 0) {
+    if (ramo.prerrequisitos.length === 0) 
         return true;
     }
     // Verifica si *todos* sus prerrequisitos están marcados como aprobados
@@ -170,7 +170,7 @@ function updateRamoStates() {
             ramoDiv.classList.add('aprobado');
         } else {
             // Si el ramo NO está aprobado, verificamos si puede ser tomado (está desbloqueado)
-            if (isRamoUnlocked(ramoId)) {
+            if (isRamoUnlocked(ramoId) {
                 ramoDiv.classList.add('desbloqueado'); // Está listo para tomar
             } else {
                 ramoDiv.classList.add('bloqueado'); // Faltan prerrequisitos, no se puede tomar aún
@@ -211,7 +211,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // **IMPORTANTE**: Llama a esta función para establecer los estados iniciales de todos los ramos
     // (Por ejemplo, los ramos sin prerrequisitos se mostrarán como "desbloqueados" al inicio)
-    updateRamoStates();
+     updateRamoStates();
 
 
     // ----------------------------------------------------
